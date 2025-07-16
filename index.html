@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-image: url('./assets/bg_1.jpg');
+      background-size: cover;
+      background-repeat: repeat;
+      background-position: center;
+      flex-direction: column;
+    }
+
+    main {
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+      color: deepskyblue;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      max-width: 600px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+      display: flex;
+      gap: 2rem;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #1a1a1a;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    footer {
+        width: 100%;
+        height: 6rem;
+        background-color: #B1B2FF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    footer p {
+      margin: 0;
+      font-size: 1rem;
+      color:gold;
+    }
+
+    #Eggy {
+        font-weight: bold;
+        font-family: 'Pacifico', cursive;
+        font-size:x-large;
+        color:deeppink;
+    }
+
+    #prayer {
+        font-style: italic;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+</head>
+<body>
+    <main>
+        <h1>Happy 19th Birthday</h1>
+        <p id = "prayer">Happy birthday Vangel! As we celebrate you today, I pray for the guidance and divine protection of God on your life. No weapon fashioned against you will prosper. The favor of God will continue to lead you and you will continue to excel in all you do. I ask that more and more blessings continue to enrich your life, this and every day, in Jesus' name I pray, Amen!!!</p>
+        <p style="font-size: x-large; font-weight: 600; color: indianred">Check these out!</p>
+        <ul>
+            <li><a href="./paragraph.html" style ="color:lime">Your Paragraph</a></li>
+            <li><a href="./memory_lane.html" style ="color:gold">Memory Lane</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>Made with love by <span id="Eggy">Eggy</span></p>
+    </footer>
+    <script>
+        window.onload = function () {
+            confetti({
+            particleCount: 200,
+            spread: 100,
+            origin: { y: 0.6 }
+            });
+            confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+            setTimeout(() => {
+            confetti({ particleCount: 100, spread: 100, origin: { y: 0.3 } });
+        }, 500);
+        };
+    </script>
+
+</body>
+</html>
